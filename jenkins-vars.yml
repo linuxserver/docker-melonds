@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-melonds
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_USER = 'melonDS-emu'
+  - EXT_REPO = 'melonDS'
+  - BUILD_VERSION_ARG = 'MELONDS_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-melonds'
+  - CONTAINER_NAME = 'melonds'
+  - DOCKERHUB_IMAGE = 'linuxserver/melonds'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/melonds'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/melonds'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3001'
+  - CI_SSL = 'true'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
+  - CI_AUTH = 'user:password'
+  - CI_WEBPATH = ''
