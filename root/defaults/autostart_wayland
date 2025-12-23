@@ -5,4 +5,4 @@ if [ ! -f "${HOME}/.config/melonDS/melonDS.toml" ]; then
   cp /defaults/melonDS.toml "${HOME}/.config/melonDS/"
 fi
 
-foot -e /usr/bin/melonDS
+xterm -e /usr/bin/melonDS
