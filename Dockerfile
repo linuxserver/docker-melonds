@@ -27,7 +27,7 @@ RUN \
     unzip && \
   if [ -z ${MELONDS_VERSION+x} ]; then \
     MELONDS_VERSION=$(curl -sX GET "https://api.github.com/repos/melonDS-emu/melonDS/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   curl -o \
     /tmp/melon.zip -L \
